@@ -1,0 +1,27 @@
+nav {
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+nav h1 {
+    font-size: 26px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+nav ul li:hover {
+    cursor: pointer;
+}
