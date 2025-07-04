@@ -1,0 +1,34 @@
+.personal-info {
+    width: 100%;
+    padding: 80px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(35, 58, 140);
+}
+
+.personal-info li {
+    width: 250px;
+    margin: 0px 10px;
+    padding: 30px;
+    background-color: rgba(173, 202, 240, 0.3);
+    border: 1px solid rgba(173, 202, 240, 0.8);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.personal-info__value,
+.personal-info__name {
+    color: rgb(255, 255, 255);
+}
+
+.personal-info__value {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.personal-info__name {
+    margin-top: 20px;
+}
