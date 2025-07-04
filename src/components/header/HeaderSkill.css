@@ -1,0 +1,20 @@
+.header-skill {
+    padding: 8px 5px;
+    display: flex;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(173, 202, 240, 0.3);
+    display: flex;
+    align-items: center;
+}
+
+.header-skill p {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+
+.header-skill img {
+    height: 14px;
+    width: 14px;
+    margin: 0px 10px;
+}
