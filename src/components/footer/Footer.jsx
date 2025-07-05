@@ -3,9 +3,30 @@ import Marker from '../../utils/Marker.jsx';
 import emailImg from '../../assets/email.png';
 import phoneImg from '../../assets/phone.png';
 import addressImg from '../../assets/address.png';
+import githubImg from '../../assets/github.png';
+import linkedinImg from '../../assets/linkedin.png';
+import instagramImg from '../../assets/instagram.png';
 import './Footer.css';
 
 const Footer = () => {
+    const socialLinks = [
+        {
+            id: 'socil-1',
+            imageSrc: linkedinImg,
+            href: '#',
+        },
+        {
+            id: 'socil-2',
+            imageSrc: githubImg,
+            href: '#',
+        },
+        {
+            id: 'socil-3',
+            imageSrc: instagramImg,
+            href: '#',
+        },
+    ];
+
     const quickLinks = [
         {
             id: 'link-1',
@@ -53,6 +74,15 @@ const Footer = () => {
                 <h3>Tlhalefo Sebaeng</h3>
                 <Marker />
                 <p>{description}</p>
+                <ul>
+                    {socialLinks.map((link) => (
+                        <li key={link.id}>
+                            <a href={link.href}>
+                                <img src={link.imageSrc} />
+                            </a>
+                        </li>
+                    ))}
+                </ul>
             </section>
             <section className="footer-links">
                 <h3>Quick Links</h3>

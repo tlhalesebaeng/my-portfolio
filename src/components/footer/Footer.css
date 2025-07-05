@@ -13,19 +13,6 @@ footer section {
     align-items: center;
 }
 
-footer ul {
-    margin: 10px 0px;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-footer ul li {
-    padding: 5px 0px;
-    display: flex;
-}
-
 footer h3 {
     margin-bottom: 5px;
     font-size: 22px;
@@ -36,6 +23,21 @@ footer .marker {
     background-color: rgb(173, 202, 240);
 }
 
+.footer-links ul,
+.footer-contact ul {
+    margin: 10px 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links ul li,
+.footer-contact ul li {
+    padding: 5px 0px;
+    display: flex;
+}
+
 /* footer about styles */
 
 .footer-about p {
@@ -44,6 +46,35 @@ footer .marker {
     text-align: center;
     display: flex;
     align-items: center;
+}
+
+.footer-about ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-about ul li {
+    height: 40px;
+    width: 40px;
+    margin: 0px 10px;
+    background-color: rgba(173, 202, 240, 0.3);
+    border-radius: 50%;
+}
+
+.footer-about ul li a {
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-about ul li img {
+    height: 16px;
+    width: 16px;
 }
 
 /* footer links styles */
@@ -66,8 +97,8 @@ footer .marker {
 }
 
 .footer-contact ul li img {
-    height: 15px;
-    width: 15px;
+    height: 16px;
+    width: 16px;
 }
 
 .footer-contact ul li p {
