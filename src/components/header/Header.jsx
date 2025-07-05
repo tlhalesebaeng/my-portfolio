@@ -1,3 +1,4 @@
+import { description } from '../../utils/functions/my-description.js';
 import Button from '../../utils/Button.jsx';
 import HeaderSkill from './HeaderSkill.jsx';
 import databaseImg from '../../assets/database.png';
@@ -43,11 +44,7 @@ const Header = () => {
                     Software Developer | Computer Science Student At Wits
                     University
                 </h3>
-                <p className="header-description">
-                    Building robust and scalable digital solutions to solve
-                    real-world challenges through clean and efficient software
-                    architecture.
-                </p>
+                <p className="header-description">{description}</p>
                 <ul>
                     {skills.map((skill) => (
                         <HeaderSkill key={skill.id} skill={skill} />
