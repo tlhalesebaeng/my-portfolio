@@ -40,7 +40,7 @@ const Header = () => {
             <section className="header-details">
                 <h2>Tlhalefo Sebaeng</h2>
                 <h3>
-                    Backend Developer | Computer Science Student At Wits
+                    Software Developer | Computer Science Student At Wits
                     University
                 </h3>
                 <p className="header-description">
