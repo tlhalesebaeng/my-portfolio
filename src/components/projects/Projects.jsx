@@ -46,7 +46,7 @@ const Projects = () => {
             techStack: [
                 { id: 'project-3-stack-1', name: 'React.js' },
                 { id: 'project-3-stack-2', name: 'CSS' },
-                { id: 'project-3-stack-2', name: 'External API' },
+                { id: 'project-3-stack-3', name: 'External API' },
             ],
             links: [
                 { id: 'project-3-link-1', href: '#' },
