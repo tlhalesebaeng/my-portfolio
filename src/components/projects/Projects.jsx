@@ -3,11 +3,6 @@ import ProjectItem from './ProjectItem.jsx';
 import './Projects.css';
 
 const Projects = () => {
-    // { id: 'project-1-stack-5', name: 'AWS' },
-    //             { id: 'project-1-stack-6', name: 'NGINX' },
-    //             { id: 'project-1-stack-7', name: 'Jenkins' },
-    //             { id: 'project-1-stack-8', name: 'React.js' },
-    //             { id: 'project-1-stack-9', name: 'CSS' },
     const projects = [
         {
             id: 'project-1',
