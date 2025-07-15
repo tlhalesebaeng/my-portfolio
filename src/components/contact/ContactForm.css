@@ -1,0 +1,52 @@
+.contact-fields {
+    margin-left: 100px;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.contact-fields ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-fields ul li {
+    height: 68px;
+    width: 100%;
+    padding: 8px 0px;
+}
+
+.contact-fields ul li:nth-child(1) {
+    height: 60px;
+    padding-top: 0px;
+}
+
+.contact-fields ul .contact-message {
+    height: 120px;
+}
+
+.contact-fields button {
+    margin-top: 20px;
+    height: 36px;
+    background-color: rgb(35, 58, 140);
+    color: rgb(250, 231, 22);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.15s ease;
+}
+
+.contact-fields button:hover {
+    background-color: rgba(35, 58, 140, 0.9);
+}
+
+.contact-fields button:active {
+    background-color: rgba(35, 58, 140, 0.6);
+}

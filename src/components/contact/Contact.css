@@ -1,0 +1,20 @@
+.contact {
+    margin-bottom: 100px; /* Remove this*/
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(35, 58, 140);
+}
+
+.contact h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.contact .details-container {
+    width: 100%;
+    margin: 30px 0px;
+    display: flex;
+}

@@ -1,4 +1,5 @@
 import About from './components/about/About.jsx';
+import Contact from './components/contact/Contact.jsx';
 import Footer from './components/footer/Footer.jsx';
 import Header from './components/header/Header.jsx';
 import Navigation from './components/navigation/Navigation.jsx';
@@ -13,6 +14,7 @@ const App = () => {
             <About />
             <PersonalInfo />
             <Projects />
+            <Contact />
             <Footer />
         </main>
     );

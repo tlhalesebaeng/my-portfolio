@@ -1,0 +1,38 @@
+.contact-details {
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-details h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.contact-details__description {
+    margin: 20px 0px;
+    color: rgb(255, 255, 255);
+}
+
+.contact-details ul {
+    margin: 20px 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-details ul li {
+    margin: 10px 0px;
+    display: flex;
+}
+
+.contact-details ul li img {
+    margin-right: 10px;
+    height: 16px;
+    width: 16px;
+}
+
+.contact-details ul li p {
+    color: rgb(255, 255, 255);
+}
