@@ -5,6 +5,7 @@ import Header from './components/header/Header.jsx';
 import Navigation from './components/navigation/Navigation.jsx';
 import PersonalInfo from './components/personal-info/PersonalInfo.jsx';
 import Projects from './components/projects/Projects.jsx';
+import Skills from './components/skills/Skills.jsx';
 
 const App = () => {
     return (
@@ -15,6 +16,7 @@ const App = () => {
             <PersonalInfo />
             <Projects />
             <Contact />
+            <Skills />
             <Footer />
         </main>
     );

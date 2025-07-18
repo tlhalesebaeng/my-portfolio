@@ -1,0 +1,28 @@
+.skills {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills h2 {
+    color: rgb(35, 58, 140);
+    font-size: 30px;
+}
+
+.skills-info {
+    height: 980px;
+    width: 100%;
+    margin-top: 50px;
+    position: relative;
+}
+
+.skills-info__divider {
+    width: 5px;
+    height: 100%;
+    background-color: rgb(250, 231, 22);
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    transform: translate(0px -50%);
+}

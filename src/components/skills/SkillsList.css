@@ -1,0 +1,58 @@
+.skills-list {
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    transform: translate(0px -50%);
+}
+
+.skills-list li {
+    margin-top: 30px;
+}
+
+.skills-list__skill-details {
+    width: 400px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+}
+
+.skills-list li:nth-child(odd) .skills-list__skill-details {
+    margin-left: -420px;
+}
+
+.skills-list li:nth-child(even) .skills-list__skill-details {
+    margin-left: 20px;
+}
+
+.skills-list__skill-details h3 {
+    margin: 10px 0px;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.skills-list__skill-marker {
+    position: relative;
+}
+
+.skills-list li div {
+    height: 26px;
+    width: 26px;
+    border: 4px solid rgb(250, 231, 22);
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 18px;
+    left: -12px;
+}
+
+.skills-list__skill-year {
+    color: rgb(35, 58, 140);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.skills-list__skill-description {
+    margin-top: 16px;
+}
