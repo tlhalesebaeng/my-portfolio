@@ -16,3 +16,29 @@
     margin: 5px 0px;
     background-color: rgb(250, 231, 22);
 }
+
+.about-details {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about-details__info {
+    width: 50%;
+}
+
+.about-details__info h3 {
+    font-size: 24px;
+    color: rgb(35, 58, 140);
+}
+
+.about-details__info p {
+    margin: 20px 0px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.about-details__info-skills {
+    padding: 10px 0px;
+}
