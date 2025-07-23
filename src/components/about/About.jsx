@@ -1,6 +1,6 @@
+import AboutSkills from './AboutSkills.jsx';
 import Marker from '../../utils/Marker.jsx';
 import './About.css';
-import AboutSkills from './AboutSkills.jsx';
 
 const About = () => {
     const skills = [
@@ -46,12 +46,45 @@ const About = () => {
         },
     ];
 
+    const personalDetails = [
+        {
+            id: 'personal-detail-1',
+            value: 'tlhalesebaeng@gmail.com',
+            imgSrc: '#',
+        },
+        {
+            id: 'personal-detail-2',
+            value: '+27 60 123 45678',
+            imgSrc: '#',
+        },
+        {
+            id: 'personal-detail-3',
+            value: 'Gauteng, South Africa',
+            imgSrc: '#',
+        },
+        {
+            id: 'personal-detail-4',
+            value: 'University of the Witwatersrand',
+            imgSrc: '#',
+        },
+    ];
+
     return (
         <section className="about">
             <h2>About Me</h2>
             <Marker />
             <div className="about-details">
-                <section></section>
+                <section className="about-details__contact">
+                    <ul>
+                        {personalDetails.map((detail) => (
+                            <li key={detail.id}>
+                                <img src={detail.imgSrc} />
+                                <p>{detail.value}</p>
+                            </li>
+                        ))}
+                    </ul>
+                </section>
+
                 <section className="about-details__info">
                     <h3>Hi, I'm Tlhalefo Sebaeng</h3>
                     <p>

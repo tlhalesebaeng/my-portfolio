@@ -20,8 +20,33 @@
 .about-details {
     width: 100%;
     margin-top: 30px;
+    padding-right: 30px;
     display: flex;
     justify-content: space-evenly;
+}
+
+.about-details__contact {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-details__contact ul {
+    padding: 10px 50px;
+    list-style: none;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+}
+
+.about-details__contact ul li {
+    display: flex;
+    padding: 8px 0px;
+}
+
+.about-details__contact ul li img {
+    margin-right: 16px;
 }
 
 .about-details__info {
