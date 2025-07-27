@@ -7,7 +7,9 @@ const Navigation = ({ refs }) => {
 
     return (
         <nav>
-            <h1>Tlhalefo Sebaeng</h1>
+            <h1 onClick={() => handleScroll(refs.headerRef)}>
+                Tlhalefo Sebaeng
+            </h1>
             <ul>
                 <li onClick={() => handleScroll(refs.aboutRef)}>About</li>
                 <li onClick={() => handleScroll(refs.projectsRef)}>Projects</li>

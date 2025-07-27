@@ -43,9 +43,7 @@ const Header = ({ refs }) => {
                 <img src={laptopImg} />
             </section>
             <section className="header-details">
-                <h2 onClick={() => handleScroll(refs.headerRef)}>
-                    Tlhalefo Sebaeng
-                </h2>
+                <h2>Tlhalefo Sebaeng</h2>
                 <h3>
                     Software Developer | Computer Science Student At Wits
                     University
