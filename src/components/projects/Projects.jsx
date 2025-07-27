@@ -2,7 +2,7 @@ import Marker from '../../utils/Marker.jsx';
 import ProjectItem from './ProjectItem.jsx';
 import './Projects.css';
 
-const Projects = () => {
+const Projects = ({ ref }) => {
     const projects = [
         {
             id: 'project-1',
@@ -56,7 +56,7 @@ const Projects = () => {
     ];
 
     return (
-        <section className="projects">
+        <section className="projects" ref={ref}>
             <h2>My Projects</h2>
             <Marker />
             <ul className="projects-list">

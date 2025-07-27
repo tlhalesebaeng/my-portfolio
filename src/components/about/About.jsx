@@ -2,7 +2,7 @@ import AboutSkills from './AboutSkills.jsx';
 import Marker from '../../utils/Marker.jsx';
 import './About.css';
 
-const About = () => {
+const About = ({ ref }) => {
     const skills = [
         {
             id: 'skill-1',
@@ -70,7 +70,7 @@ const About = () => {
     ];
 
     return (
-        <section className="about">
+        <section className="about" ref={ref}>
             <h2>About Me</h2>
             <Marker />
             <div className="about-details">

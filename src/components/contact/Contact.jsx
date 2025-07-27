@@ -6,7 +6,7 @@ import addressImg from '../../assets/address.png';
 import ContactForm from './ContactForm.jsx';
 import './Contact.css';
 
-const Contact = () => {
+const Contact = ({ ref }) => {
     const handleSubmit = (event) => {
         event.preventDefault();
     };
@@ -49,7 +49,7 @@ const Contact = () => {
     ];
 
     return (
-        <section className="contact">
+        <section className="contact" ref={ref}>
             <h2>Contact Me</h2>
             <Marker />
             <div className="details-container">

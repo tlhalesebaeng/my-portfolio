@@ -1,14 +1,20 @@
 import './Navigation.css';
 
-const Navigation = () => {
+const Navigation = ({ refs }) => {
+    const handleScroll = (ref) => {
+        ref.current.scrollIntoView({ behavior: 'smooth' });
+    };
+
     return (
         <nav>
             <h1>Tlhalefo Sebaeng</h1>
             <ul>
-                <li>About</li>
-                <li>Projects</li>
-                <li>Education</li>
-                <li>Contact</li>
+                <li onClick={() => handleScroll(refs.aboutRef)}>About</li>
+                <li onClick={() => handleScroll(refs.projectsRef)}>Projects</li>
+                <li onClick={() => handleScroll(refs.educationRef)}>
+                    Education
+                </li>
+                <li onClick={() => handleScroll(refs.contactRef)}>Contact</li>
             </ul>
         </nav>
     );

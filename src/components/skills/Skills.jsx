@@ -2,7 +2,7 @@ import Marker from '../../utils/Marker.jsx';
 import './Skills.css';
 import SkillsList from './SkillsList.jsx';
 
-const Skills = () => {
+const Skills = ({ ref }) => {
     const skills = [
         {
             id: 'skill-1',
@@ -39,7 +39,7 @@ const Skills = () => {
     ];
 
     return (
-        <section className="skills">
+        <section className="skills" ref={ref}>
             <h2>Education & Certifications</h2>
             <Marker />
             <section className="skills-info">

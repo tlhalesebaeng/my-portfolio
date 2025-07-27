@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import About from './components/about/About.jsx';
 import Contact from './components/contact/Contact.jsx';
 import Footer from './components/footer/Footer.jsx';
@@ -8,15 +9,27 @@ import Projects from './components/projects/Projects.jsx';
 import Skills from './components/skills/Skills.jsx';
 
 const App = () => {
+    const aboutRef = useRef();
+    const projectsRef = useRef();
+    const educationRef = useRef();
+    const contactRef = useRef();
+
+    const refs = {
+        aboutRef,
+        projectsRef,
+        educationRef,
+        contactRef,
+    };
+
     return (
         <main>
-            <Navigation />
+            <Navigation refs={refs} />
             <Header />
-            <About />
+            <About ref={aboutRef} />
             <PersonalInfo />
-            <Projects />
-            <Contact />
-            <Skills />
+            <Projects ref={projectsRef} />
+            <Contact ref={contactRef} />
+            <Skills ref={educationRef} />
             <Footer />
         </main>
     );
