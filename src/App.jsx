@@ -13,12 +13,14 @@ const App = () => {
     const projectsRef = useRef();
     const educationRef = useRef();
     const contactRef = useRef();
+    const headerRef = useRef();
 
     const refs = {
         aboutRef,
         projectsRef,
         educationRef,
         contactRef,
+        headerRef,
     };
 
     return (
