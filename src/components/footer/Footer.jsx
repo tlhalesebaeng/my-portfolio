@@ -46,7 +46,7 @@ const Footer = ({ refs }) => {
         },
         {
             id: 'link-4',
-            value: 'Skills',
+            value: 'Education',
         },
         {
             id: 'link-5',
