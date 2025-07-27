@@ -10,6 +10,10 @@ nav h1 {
     color: rgb(35, 58, 140);
 }
 
+nav h1:hover {
+    cursor: pointer;
+}
+
 nav ul {
     list-style: none;
     display: flex;
