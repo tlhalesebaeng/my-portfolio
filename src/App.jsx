@@ -32,7 +32,7 @@ const App = () => {
             <Projects ref={projectsRef} />
             <Contact ref={contactRef} />
             <Skills ref={educationRef} />
-            <Footer />
+            <Footer refs={refs} />
         </main>
     );
 };
