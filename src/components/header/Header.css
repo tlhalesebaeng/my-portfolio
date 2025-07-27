@@ -28,9 +28,9 @@ header {
 }
 
 .header-details {
-    height: 550px;
+    height: 490px;
     width: 100%;
-    margin: 60px 0px;
+    margin-top: 60px;
     padding-left: 150px;
     overflow: hidden;
     position: absolute;
