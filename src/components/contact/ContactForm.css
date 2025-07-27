@@ -17,13 +17,13 @@
 }
 
 .contact-fields ul li {
-    height: 68px;
+    height: 74px;
     width: 100%;
     padding: 8px 0px;
 }
 
 .contact-fields ul li:nth-child(1) {
-    height: 60px;
+    height: 66px;
     padding-top: 0px;
 }
 
