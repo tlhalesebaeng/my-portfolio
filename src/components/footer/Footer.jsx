@@ -17,17 +17,17 @@ const Footer = ({ refs }) => {
         {
             id: 'socil-1',
             imageSrc: linkedinImg,
-            href: '#',
+            href: 'https://www.linkedin.com/in/tlhalefo-sebaeng',
         },
         {
             id: 'socil-2',
             imageSrc: githubImg,
-            href: '#',
+            href: 'https://github.com/tlhalesebaeng',
         },
         {
             id: 'socil-3',
             imageSrc: instagramImg,
-            href: '#',
+            href: 'https://www.instagram.com/tlhalefo.sebaeng',
         },
     ];
 
@@ -81,7 +81,7 @@ const Footer = ({ refs }) => {
                 <ul>
                     {socialLinks.map((link) => (
                         <li key={link.id}>
-                            <a href={link.href}>
+                            <a href={link.href} target="_blank">
                                 <img src={link.imageSrc} />
                             </a>
                         </li>
