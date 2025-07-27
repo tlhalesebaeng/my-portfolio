@@ -1,47 +1,55 @@
 import AboutSkills from './AboutSkills.jsx';
 import Marker from '../../utils/Marker.jsx';
+import javaImg from '../../assets/java.png';
+import springBootImg from '../../assets/spring-boot.png';
+import javaScriptImg from '../../assets/java-script.png';
+import reactImg from '../../assets/react.png';
+import mySQLImg from '../../assets/mysql.png';
+import cloudImg from '../../assets/cloud.png';
+import dockerImg from '../../assets/docker.png';
+import infinityImg from '../../assets/infinity.png';
 import './About.css';
 
 const About = ({ ref }) => {
     const skills = [
         {
             id: 'skill-1',
-            imgSrc: '#',
+            imgSrc: javaImg,
             name: 'Java',
         },
         {
             id: 'skill-2',
-            imgSrc: '#',
+            imgSrc: springBootImg,
             name: 'Spring Boot',
         },
         {
             id: 'skill-3',
-            imgSrc: '#',
+            imgSrc: javaScriptImg,
             name: 'JavaScript',
         },
         {
             id: 'skill-4',
-            imgSrc: '#',
+            imgSrc: reactImg,
             name: 'React.js',
         },
         {
             id: 'skill-5',
-            imgSrc: '#',
+            imgSrc: mySQLImg,
             name: 'MySQL',
         },
         {
             id: 'skill-6',
-            imgSrc: '#',
+            imgSrc: cloudImg,
             name: 'AWS',
         },
         {
             id: 'skill-7',
-            imgSrc: '#',
+            imgSrc: dockerImg,
             name: 'Docker',
         },
         {
             id: 'skill-8',
-            imgSrc: '#',
+            imgSrc: infinityImg,
             name: 'Jenkins',
         },
     ];
