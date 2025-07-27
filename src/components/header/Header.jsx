@@ -37,7 +37,7 @@ const Header = ({ refs }) => {
     ];
 
     return (
-        <header ref={refs.headerRef}>
+        <header ref={refs.homeRef}>
             <div className="header-bg-color"></div>
             <section className="header-bg-img">
                 <img src={laptopImg} />
