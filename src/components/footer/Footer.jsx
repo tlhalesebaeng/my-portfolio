@@ -8,7 +8,11 @@ import linkedinImg from '../../assets/linkedin.png';
 import instagramImg from '../../assets/instagram.png';
 import './Footer.css';
 
-const Footer = () => {
+const Footer = ({ refs }) => {
+    const handleScroll = (ref) => {
+        ref.current.scrollIntoView({ behavior: 'smooth' });
+    };
+
     const socialLinks = [
         {
             id: 'socil-1',
@@ -88,9 +92,15 @@ const Footer = () => {
                 <h3>Quick Links</h3>
                 <Marker />
                 <ul>
-                    {quickLinks.map((link) => (
-                        <li key={link.id}>{link.value}</li>
-                    ))}
+                    {quickLinks.map((link) => {
+                        const ref = refs[`${link.value.toLowerCase()}Ref`];
+
+                        return (
+                            <li onClick={() => handleScroll(ref)} key={link.id}>
+                                {link.value}
+                            </li>
+                        );
+                    })}
                 </ul>
             </section>
             <section className="footer-contact">
