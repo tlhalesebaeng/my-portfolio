@@ -42,6 +42,7 @@ footer .marker {
 .footer-about p {
     color: rgb(255, 255, 255);
     margin: 20px 0px;
+    font-size: 18px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -79,6 +80,7 @@ footer .marker {
 /* footer links styles */
 
 .footer-links ul li {
+    font-size: 18px;
     color: rgb(255, 255, 255);
 }
 
@@ -101,6 +103,7 @@ footer .marker {
 }
 
 .footer-contact ul li p {
+    font-size: 18px;
     margin-left: 10px;
     color: rgb(255, 255, 255);
 }
