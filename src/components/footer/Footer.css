@@ -61,6 +61,11 @@ footer .marker {
     margin: 0px 10px;
     background-color: rgba(173, 202, 240, 0.3);
     border-radius: 50%;
+    transition: background-color ease 0.15s;
+}
+
+.footer-about ul li:hover {
+    background-color: rgba(173, 202, 240, 0.5);
 }
 
 .footer-about ul li a {
