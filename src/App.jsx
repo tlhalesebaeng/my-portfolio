@@ -24,7 +24,7 @@ const App = () => {
     return (
         <main>
             <Navigation refs={refs} />
-            <Header />
+            <Header refs={refs} />
             <About ref={aboutRef} />
             <PersonalInfo />
             <Projects ref={projectsRef} />
