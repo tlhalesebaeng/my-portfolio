@@ -47,6 +47,8 @@
 
 .about-details__contact ul li img {
     margin-right: 16px;
+    height: 20px;
+    width: 20px;
 }
 
 .about-details__info {

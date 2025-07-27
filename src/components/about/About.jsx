@@ -8,6 +8,10 @@ import mySQLImg from '../../assets/mysql.png';
 import cloudImg from '../../assets/cloud.png';
 import dockerImg from '../../assets/docker.png';
 import infinityImg from '../../assets/infinity.png';
+import emailImg from '../../assets/email-blue.png';
+import phoneImg from '../../assets/phone-blue.png';
+import addressImg from '../../assets/address-blue.png';
+import eductionImg from '../../assets/education.png';
 import './About.css';
 
 const About = ({ ref }) => {
@@ -58,22 +62,22 @@ const About = ({ ref }) => {
         {
             id: 'personal-detail-1',
             value: 'tlhalesebaeng@gmail.com',
-            imgSrc: '#',
+            imgSrc: emailImg,
         },
         {
             id: 'personal-detail-2',
             value: '+27 60 123 45678',
-            imgSrc: '#',
+            imgSrc: phoneImg,
         },
         {
             id: 'personal-detail-3',
             value: 'Gauteng, South Africa',
-            imgSrc: '#',
+            imgSrc: addressImg,
         },
         {
             id: 'personal-detail-4',
             value: 'University of the Witwatersrand',
-            imgSrc: '#',
+            imgSrc: eductionImg,
         },
     ];
 
