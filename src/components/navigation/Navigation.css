@@ -7,6 +7,16 @@ nav {
     position: fixed;
     top: 0;
     z-index: 100;
+    transition: all ease 0.25s;
+}
+
+.blue-nav {
+    background-color: rgb(35, 58, 140);
+}
+
+.blue-nav h1,
+.blue-nav ul li {
+    color: rgba(255, 255, 255);
 }
 
 nav h1 {

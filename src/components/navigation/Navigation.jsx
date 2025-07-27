@@ -1,12 +1,30 @@
+import { useEffect, useState } from 'react';
 import './Navigation.css';
 
 const Navigation = ({ refs }) => {
+    const [changeBackground, setChangeBackground] = useState(false);
+
+    useEffect(() => {
+        const handleWindowScroll = () => {
+            const scrolled = window.scrollY; // Value of how much we have scrolled
+
+            if (scrolled > 550) {
+                setChangeBackground(true);
+            } else {
+                setChangeBackground(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleWindowScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     const handleScroll = (ref) => {
         ref.current.scrollIntoView({ behavior: 'smooth' });
     };
 
     return (
-        <nav>
+        <nav className={changeBackground ? 'blue-nav' : undefined}>
             <h1 onClick={() => handleScroll(refs.homeRef)}>Tlhalefo Sebaeng</h1>
             <ul>
                 <li onClick={() => handleScroll(refs.aboutRef)}>About</li>
