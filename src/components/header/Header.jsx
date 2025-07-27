@@ -8,7 +8,11 @@ import bulbImg from '../../assets/bulb.png';
 import laptopImg from '../../assets/laptop.jpg';
 import './Header.css';
 
-const Header = () => {
+const Header = ({ refs }) => {
+    const handleScroll = (ref) => {
+        ref.current.scrollIntoView({ behavior: 'smooth' });
+    };
+
     const skills = [
         {
             id: 'skill-1',
@@ -51,10 +55,18 @@ const Header = () => {
                     ))}
                 </ul>
                 <section className="header-buttons">
-                    <Button className="header-btn__projects">
+                    <Button
+                        onClick={() => handleScroll(refs.projectsRef)}
+                        className="header-btn__projects"
+                    >
                         View My Projects
                     </Button>
-                    <Button className="header-btn__contact">Contact Me</Button>
+                    <Button
+                        onClick={() => handleScroll(refs.contactRef)}
+                        className="header-btn__contact"
+                    >
+                        Contact Me
+                    </Button>
                 </section>
             </section>
         </header>
