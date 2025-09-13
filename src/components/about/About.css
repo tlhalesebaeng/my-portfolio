@@ -69,3 +69,34 @@
 .about-details__info-skills {
     padding: 10px 0px;
 }
+
+/* Responsiveness */
+
+@media (max-width: 500px) {
+    .about {
+        padding: 80px 30px;
+    }
+
+    .about-details {
+        padding: 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-details__info {
+        width: 100%;
+    }
+
+    .about-details__info h3 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-details__info p {
+        text-align: center;
+    }
+
+    .about-details__contact {
+        display: none;
+    }
+}
