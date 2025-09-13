@@ -16,3 +16,11 @@
     list-style: none;
     display: flex;
 }
+
+/* Responsiveness */
+
+@media (max-width: 500px) {
+    .projects-list {
+        flex-direction: column;
+    }
+}
