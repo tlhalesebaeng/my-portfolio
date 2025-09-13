@@ -56,3 +56,29 @@
 .skills-list__skill-description {
     margin-top: 16px;
 }
+
+/* Responsiveness */
+
+@media (max-width: 500px) {
+    .skills-list {
+        position: static;
+        transform: none;
+    }
+
+    .skills-list li:first-child {
+        margin: 0px;
+    }
+
+    .skills-list li:nth-child(odd) .skills-list__skill-details,
+    .skills-list li:nth-child(even) .skills-list__skill-details {
+        margin-left: 0px;
+    }
+
+    .skills-list__skill-details {
+        width: 100%;
+    }
+
+    .skills-list__skill-marker {
+        display: none;
+    }
+}

@@ -26,3 +26,25 @@
     top: 0px;
     transform: translate(0px -50%);
 }
+
+/* Responsiveness */
+
+@media (max-width: 500px) {
+    .skills {
+        padding: 80px 30px;
+    }
+
+    .skills h2 {
+        text-align: center;
+    }
+
+    .skills-info {
+        margin-top: 30px;
+        height: fit-content;
+        position: static;
+    }
+
+    .skills-info__divider {
+        display: none;
+    }
+}
