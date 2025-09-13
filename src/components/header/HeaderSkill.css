@@ -18,3 +18,20 @@
     width: 14px;
     margin: 0px 10px;
 }
+
+/* Responsiveness */
+
+@media (max-width: 500px) {
+    .header-skill {
+        margin: 5px 0px;
+    }
+
+    .header-skill p {
+        font-size: 13px;
+    }
+
+    .header-skill img {
+        height: 12px;
+        width: 12px;
+    }
+}

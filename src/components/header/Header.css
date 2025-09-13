@@ -32,7 +32,7 @@ header {
     height: 490px;
     width: 100%;
     margin-top: 60px;
-    padding-left: 150px;
+    padding: 0px 150px;
     overflow: hidden;
     position: absolute;
     top: 0;
@@ -110,4 +110,32 @@ header ul {
 
 .header-btn__contact:hover {
     background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Responsiveness */
+
+@media (max-width: 500px) {
+    header ul {
+        padding: 16px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-bg-img {
+        height: 620px;
+    }
+
+    .header-details {
+        height: 550px;
+        margin-top: 40px;
+        padding: 0px 30px;
+    }
+
+    .header-details h2 {
+        display: none;
+    }
+
+    .header-description {
+        font-size: 15px;
+    }
 }
