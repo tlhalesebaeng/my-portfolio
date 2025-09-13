@@ -46,3 +46,11 @@ nav ul li {
 nav ul li:hover {
     cursor: pointer;
 }
+
+/* Responsiveness */
+
+@media (max-width: 500px) {
+    nav ul {
+        display: none;
+    }
+}
