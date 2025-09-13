@@ -36,3 +36,17 @@
 .contact-details ul li p {
     color: rgb(255, 255, 255);
 }
+
+/* Responsiveness */
+
+@media (max-width: 500px) {
+    .contact-details {
+        max-width: 100%;
+        margin: 30px 0px;
+        align-items: center;
+    }
+
+    .contact-details ul {
+        display: none;
+    }
+}
