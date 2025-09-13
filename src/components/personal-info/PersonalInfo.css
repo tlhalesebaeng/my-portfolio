@@ -32,3 +32,15 @@
 .personal-info__name {
     margin-top: 20px;
 }
+
+@media (max-width: 500px) {
+    .personal-info {
+        padding: 80px 50px;
+        flex-direction: column;
+    }
+
+    .personal-info li {
+        width: 100%;
+        margin: 16px 0px;
+    }
+}
