@@ -112,3 +112,20 @@ footer .marker {
     margin-left: 10px;
     color: rgb(255, 255, 255);
 }
+
+/* Responsiveness */
+
+@media (max-width: 500px) {
+    footer {
+        padding: 80px 30px;
+        flex-direction: column;
+    }
+
+    footer section {
+        width: 100%;
+    }
+
+    .footer-links {
+        margin: 30px 0px;
+    }
+}
