@@ -66,7 +66,7 @@ const About = ({ ref }) => {
         },
         {
             id: 'personal-detail-2',
-            value: '+27 60 123 45678',
+            value: '+27 67 784 6910',
             imgSrc: phoneImg,
         },
         {
