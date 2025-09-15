@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './Navigation.css';
 import Hamburger from '../hamburger/Hamburger.jsx';
+import NavigationList from './NavigationList.jsx';
 
 const Navigation = ({ refs }) => {
     const [changeBackground, setChangeBackground] = useState(false);
@@ -27,14 +28,7 @@ const Navigation = ({ refs }) => {
     return (
         <nav className={changeBackground ? 'blue-nav' : undefined}>
             <h1 onClick={() => handleScroll(refs.homeRef)}>Tlhalefo Sebaeng</h1>
-            <ul className="nav-list">
-                <li onClick={() => handleScroll(refs.aboutRef)}>About</li>
-                <li onClick={() => handleScroll(refs.projectsRef)}>Projects</li>
-                <li onClick={() => handleScroll(refs.educationRef)}>
-                    Education
-                </li>
-                <li onClick={() => handleScroll(refs.contactRef)}>Contact</li>
-            </ul>
+            <NavigationList />
             <Hamburger />
         </nav>
     );
