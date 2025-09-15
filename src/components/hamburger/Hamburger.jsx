@@ -1,8 +1,8 @@
 import './Hamburger.css';
 
-const Hamburger = () => {
+const Hamburger = ({ onClick }) => {
     return (
-        <ul className="hamburger">
+        <ul className="hamburger" onClick={onClick}>
             <li></li>
             <li></li>
             <li></li>
