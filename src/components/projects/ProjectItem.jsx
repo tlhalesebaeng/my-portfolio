@@ -13,7 +13,9 @@ const ProjectItem = ({ project }) => {
                 ))}
             </ul>
             <section>
-                <a href={codeLink.href}>See Code</a>
+                <a href={codeLink.href} target="_blank">
+                    See Code
+                </a>
                 <a href={siteLink.href}>Visit Site</a>
             </section>
         </li>
