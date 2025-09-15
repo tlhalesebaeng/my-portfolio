@@ -1,0 +1,14 @@
+.hamburger {
+    padding: 4px 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hamburger li {
+    height: 4px;
+    width: 40px;
+    background-color: rgb(35, 58, 140);
+    border-radius: 2px;
+}

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './Navigation.css';
+import Hamburger from '../hamburger/Hamburger.jsx';
 
 const Navigation = ({ refs }) => {
     const [changeBackground, setChangeBackground] = useState(false);
@@ -34,6 +35,7 @@ const Navigation = ({ refs }) => {
                 </li>
                 <li onClick={() => handleScroll(refs.contactRef)}>Contact</li>
             </ul>
+            <Hamburger />
         </nav>
     );
 };

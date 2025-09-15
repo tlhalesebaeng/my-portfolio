@@ -20,6 +20,10 @@ nav {
     color: rgba(255, 255, 255);
 }
 
+.blue-nav .hamburger li {
+    background-color: rgb(255, 255, 255);
+}
+
 nav h1 {
     font-size: 26px;
     color: rgb(35, 58, 140);
