@@ -26,7 +26,7 @@ const Navigation = ({ refs }) => {
     return (
         <nav className={changeBackground ? 'blue-nav' : undefined}>
             <h1 onClick={() => handleScroll(refs.homeRef)}>Tlhalefo Sebaeng</h1>
-            <ul>
+            <ul className="nav-list">
                 <li onClick={() => handleScroll(refs.aboutRef)}>About</li>
                 <li onClick={() => handleScroll(refs.projectsRef)}>Projects</li>
                 <li onClick={() => handleScroll(refs.educationRef)}>
