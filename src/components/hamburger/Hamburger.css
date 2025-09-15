@@ -12,3 +12,11 @@
     background-color: rgb(35, 58, 140);
     border-radius: 2px;
 }
+
+/* Responsiveness */
+
+@media (min-width: 500px) {
+    .hamburger {
+        display: none;
+    }
+}
