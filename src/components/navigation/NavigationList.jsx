@@ -1,12 +1,12 @@
 import './NavigationList.css';
 
-const NavigationList = ({ onScroll, refs }) => {
+const NavigationList = ({ onLinkClick, refs, sidebarIsOpened }) => {
     return (
-        <ul className="nav-list">
-            <li onClick={() => onScroll(refs.aboutRef)}>About</li>
-            <li onClick={() => onScroll(refs.projectsRef)}>Projects</li>
-            <li onClick={() => onScroll(refs.educationRef)}>Education</li>
-            <li onClick={() => onScroll(refs.contactRef)}>Contact</li>
+        <ul className={sidebarIsOpened ? 'sidebar-nav' : 'nav-list'}>
+            <li onClick={() => onLinkClick(refs.aboutRef)}>About</li>
+            <li onClick={() => onLinkClick(refs.projectsRef)}>Projects</li>
+            <li onClick={() => onLinkClick(refs.educationRef)}>Education</li>
+            <li onClick={() => onLinkClick(refs.contactRef)}>Contact</li>
         </ul>
     );
 };

@@ -1,0 +1,46 @@
+/* Styles belonging to the main navigation list only */
+
+.nav-list li {
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+/* Styles belonging to the sidebar navigation list only */
+
+.sidebar-nav {
+    flex-direction: column;
+}
+
+.sidebar-nav li {
+    margin: 20px 0px;
+    font-size: 26px;
+}
+
+/* Styles shared by main and sidebar navigation lists */
+
+.nav-list,
+.sidebar-nav {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li,
+.sidebar-nav li {
+    font-weight: 500;
+    color: rgb(35, 58, 140);
+}
+
+.nav-list li:hover,
+.sidebar-nav li:hover {
+    cursor: pointer;
+}
+
+/* Responsiveness */
+
+@media (max-width: 500px) {
+    .nav-list {
+        display: none;
+    }
+}
