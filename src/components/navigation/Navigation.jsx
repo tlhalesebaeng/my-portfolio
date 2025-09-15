@@ -28,7 +28,7 @@ const Navigation = ({ refs }) => {
     return (
         <nav className={changeBackground ? 'blue-nav' : undefined}>
             <h1 onClick={() => handleScroll(refs.homeRef)}>Tlhalefo Sebaeng</h1>
-            <NavigationList />
+            <NavigationList onScroll={handleScroll} refs={refs} />
             <Hamburger />
         </nav>
     );
