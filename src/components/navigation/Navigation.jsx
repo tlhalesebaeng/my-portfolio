@@ -25,7 +25,9 @@ const Navigation = ({ refs }) => {
     }, []);
 
     const handleScroll = (ref) => {
-        ref.current.scrollIntoView({ behavior: 'smooth' });
+        setTimeout(() => {
+            ref.current.scrollIntoView({ behavior: 'smooth' });
+        }, 300);
     };
 
     const handleOpenSidebar = () => {
