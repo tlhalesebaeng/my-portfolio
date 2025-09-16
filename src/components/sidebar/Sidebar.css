@@ -9,4 +9,16 @@
     top: 0px;
     left: 0px;
     z-index: 100;
+    animation: show_sidebar 0.3s ease-out forwards;
+}
+
+/* Animation */
+
+@keyframes show_sidebar {
+    0% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
