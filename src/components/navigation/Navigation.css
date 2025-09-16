@@ -38,3 +38,9 @@ nav img {
     height: 24px;
     width: 24px;
 }
+
+@media (max-width: 500px) {
+    nav {
+        padding: 20px 30px;
+    }
+}
