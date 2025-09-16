@@ -31,6 +31,10 @@ const Navigation = ({ refs }) => {
     const handleOpenSidebar = () => {
         if (!changeBackground) setChangeBackground(true);
         setSidebarIsOpened(true);
+
+        // Disable scrolling
+        const bodyElement = document.getElementsByTagName('body')[0];
+        bodyElement.style.overflow = 'hidden';
     };
 
     const handleCloseSidebar = () => {
@@ -41,6 +45,10 @@ const Navigation = ({ refs }) => {
         } else {
             setChangeBackground(false);
         }
+
+        // Enable scrolling
+        const bodyElement = document.getElementsByTagName('body')[0];
+        bodyElement.removeAttribute('style');
     };
 
     const handleSidebarLinkClick = (ref) => {
