@@ -18,13 +18,7 @@ const Projects = ({ ref }) => {
                 { id: 'project-1-stack-7', name: 'MySQL' },
                 { id: 'project-2-stack-8', name: 'React.js' },
             ],
-            links: [
-                {
-                    id: 'project-1-link-1',
-                    href: 'https://github.com/tlhalesebaeng/league-oracle',
-                },
-                { id: 'project-1-link-2', href: '#' },
-            ],
+            link: 'https://github.com/tlhalesebaeng/league-oracle',
         },
         {
             id: 'project-2',
@@ -37,13 +31,7 @@ const Projects = ({ ref }) => {
                 { id: 'project-2-stack-4', name: 'React.js' },
                 { id: 'project-2-stack-5', name: 'CSS' },
             ],
-            links: [
-                {
-                    id: 'project-2-link-1',
-                    href: 'https://github.com/tlhalesebaeng/auth-template-backend',
-                },
-                { id: 'project-2-link-2', href: '#' },
-            ],
+            link: 'https://github.com/tlhalesebaeng/auth-template-backend',
         },
         {
             id: 'project-3',
@@ -54,13 +42,7 @@ const Projects = ({ ref }) => {
                 { id: 'project-3-stack-2', name: 'CSS' },
                 { id: 'project-3-stack-3', name: 'External API' },
             ],
-            links: [
-                {
-                    id: 'project-3-link-1',
-                    href: 'https://github.com/tlhalesebaeng/text-to-speech-app',
-                },
-                { id: 'project-3-link-2', href: '#' },
-            ],
+            link: 'https://github.com/tlhalesebaeng/text-to-speech-app',
         },
     ];
 

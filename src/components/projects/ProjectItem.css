@@ -42,23 +42,25 @@
 }
 
 .project-item section a {
+    width: 100%;
     font-size: 16px;
     font-weight: 500;
     padding: 8px 10px;
     text-decoration: none;
+    text-align: center;
     border-radius: 5px;
 }
 
-.project-item section a:nth-child(1) {
+.project-item section a {
     padding: 10px 10px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(35, 58, 140);
-}
-
-.project-item section a:nth-child(2) {
-    margin-left: 10px;
+    background-color: transparent;
     border: 2px solid rgb(35, 58, 140);
     color: rgb(35, 58, 140);
+    transition: background-color ease 0.5s;
+}
+
+.project-item section a:hover {
+    background-color: rgba(236, 238, 240, 0.5);
 }
 
 /* Responsiveness */

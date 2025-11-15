@@ -1,8 +1,6 @@
 import './ProjectItem.css';
 
 const ProjectItem = ({ project }) => {
-    const codeLink = project.links[0];
-    const siteLink = project.links[1];
     return (
         <li className="project-item">
             <h3>{project.name}</h3>
@@ -13,10 +11,9 @@ const ProjectItem = ({ project }) => {
                 ))}
             </ul>
             <section>
-                <a href={codeLink.href} target="_blank">
-                    See Code
+                <a href={project.link} target="_blank">
+                    Check Project Code
                 </a>
-                <a href={siteLink.href}>Visit Site</a>
             </section>
         </li>
     );
