@@ -46,6 +46,10 @@
         align-items: center;
     }
 
+    .contact-details__description {
+        text-align: center;
+    }
+
     .contact-details ul {
         display: none;
     }
