@@ -6,8 +6,6 @@ import javaScriptImg from '../../assets/java-script.png';
 import reactImg from '../../assets/react.png';
 import mySQLImg from '../../assets/mysql.png';
 import cloudImg from '../../assets/cloud.png';
-import dockerImg from '../../assets/docker.png';
-import infinityImg from '../../assets/infinity.png';
 import emailImg from '../../assets/email-blue.png';
 import phoneImg from '../../assets/phone-blue.png';
 import addressImg from '../../assets/address-blue.png';
@@ -44,17 +42,7 @@ const About = ({ ref }) => {
         {
             id: 'skill-6',
             imgSrc: cloudImg,
-            name: 'AWS',
-        },
-        {
-            id: 'skill-7',
-            imgSrc: dockerImg,
-            name: 'Docker',
-        },
-        {
-            id: 'skill-8',
-            imgSrc: infinityImg,
-            name: 'Jenkins',
+            name: 'RESTful APIs',
         },
     ];
 
