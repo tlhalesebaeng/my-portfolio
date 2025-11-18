@@ -120,6 +120,10 @@ header ul {
 }
 
 @media (max-width: 1000px) {
+    .header-details {
+        padding: 0px 60px;
+    }
+
     .header-details h2 {
         display: none;
     }
@@ -129,8 +133,9 @@ header ul {
         margin-bottom: 25px;
     }
 
-    .header-details {
-        padding: 0px 60px;
+    header ul {
+        display: grid;
+        grid-template-columns: auto auto;
     }
 }
 

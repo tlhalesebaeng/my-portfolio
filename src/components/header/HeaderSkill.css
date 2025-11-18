@@ -21,6 +21,12 @@
 
 /* Responsiveness */
 
+@media (max-width: 1000px) {
+    .header-skill {
+        margin: 10px 0px;
+    }
+}
+
 @media (max-width: 650px) {
     .header-skill {
         margin: 5px 0px;
