@@ -29,6 +29,12 @@
 
 /* Responsiveness */
 
+@media (max-width: 1000px) {
+    .about-skills {
+        justify-self: center;
+    }
+}
+
 @media (max-width: 500px) {
     .about-skills {
         display: grid;

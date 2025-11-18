@@ -72,15 +72,9 @@
 
 /* Responsiveness */
 
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
     .about {
-        padding: 80px 30px;
-    }
-
-    .about-details {
-        padding: 0px;
-        flex-direction: column;
-        align-items: center;
+        padding: 80px 50px;
     }
 
     .about-details__info {
@@ -98,5 +92,17 @@
 
     .about-details__contact {
         display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .about {
+        padding: 80px 30px;
+    }
+
+    .about-details {
+        padding: 0px;
+        flex-direction: column;
+        align-items: center;
     }
 }
