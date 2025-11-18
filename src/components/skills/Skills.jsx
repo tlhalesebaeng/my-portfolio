@@ -10,7 +10,7 @@ const Skills = ({ ref }) => {
             title: 'BSc Computer Science and Computational Applications',
             place: 'Wits University',
             description:
-                'Expected to get this degree on the specified above year. Relavant course work includes Software Design',
+                'I am currently doing second year and I am expecting to finish on november 2026. Relevant course work includes Mobile Computing, Database Fundamentals, Computer Networks and Analysis of Algorithms.',
         },
         {
             id: 'skill-2',
