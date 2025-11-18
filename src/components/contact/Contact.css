@@ -1,5 +1,5 @@
 .contact {
-    padding: 80px 20px;
+    padding: 80px 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,6 +21,11 @@
 /* Responsiveness */
 
 @media (max-width: 500px) {
+    .contact {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .contact .details-container {
         flex-direction: column;
         margin: 0px; /* Remove the margin so that the container items can control it */
