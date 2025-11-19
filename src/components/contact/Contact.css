@@ -20,14 +20,21 @@
 
 /* Responsiveness */
 
-@media (max-width: 500px) {
+@media (max-width: 850px) {
     .contact {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 80px;
+        padding-right: 80px;
     }
 
     .contact .details-container {
         flex-direction: column;
         margin: 0px; /* Remove the margin so that the container items can control it */
+    }
+}
+
+@media (max-width: 850px) {
+    .contact {
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
