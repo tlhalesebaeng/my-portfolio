@@ -33,9 +33,32 @@
     margin-top: 20px;
 }
 
+@media (max-width: 1000px) {
+    .personal-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+
+    .personal-info li {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .personal-info {
+        width: 100%;
+        padding: 50px;
+    }
+}
+
 @media (max-width: 500px) {
     .personal-info {
         padding: 80px 50px;
+        display: flex;
+        column-gap: 0px;
+        row-gap: 0px;
         flex-direction: column;
     }
 
