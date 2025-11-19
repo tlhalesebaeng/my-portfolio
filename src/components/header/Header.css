@@ -113,11 +113,6 @@ header ul {
 }
 
 /* Responsiveness */
-@media (max-width: 1000px) {
-    .header-details {
-        padding: 0px 100px;
-    }
-}
 
 @media (max-width: 1000px) {
     .header-details {
@@ -162,5 +157,16 @@ header ul {
 
     .header-description {
         font-size: 15px;
+    }
+
+    .header-buttons {
+        width: 300px;
+    }
+
+    .header-btn__projects,
+    .header-btn__contact {
+        height: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
