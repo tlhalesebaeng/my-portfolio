@@ -59,7 +59,7 @@
 
 /* Responsiveness */
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
     .skills-list {
         position: static;
         transform: none;
