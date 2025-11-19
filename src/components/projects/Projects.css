@@ -19,8 +19,39 @@
 
 /* Responsiveness */
 
-@media (max-width: 500px) {
+@media (max-width: 1200px) {
+    .projects {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
     .projects-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 30px;
+        column-gap: 30px;
+    }
+}
+
+@media (max-width: 850px) {
+    .projects-list {
+        padding-left: 70px;
+        padding-right: 70px;
+        display: flex;
         flex-direction: column;
+    }
+}
+
+@media (max-width: 630px) {
+    .projects-list {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 530px) {
+    .projects-list {
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }

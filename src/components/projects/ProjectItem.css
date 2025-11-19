@@ -65,6 +65,13 @@
 
 /* Responsiveness */
 
+@media (max-width: 1200px) {
+    .project-item {
+        width: 100%;
+        margin: 0px;
+    }
+}
+
 @media (max-width: 500px) {
     /* Set the top and bottom margins of the project item */
     .project-item {
