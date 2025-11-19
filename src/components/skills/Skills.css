@@ -29,13 +29,10 @@
 
 /* Responsiveness */
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
     .skills {
-        padding: 80px 30px;
-    }
-
-    .skills h2 {
-        text-align: center;
+        padding-left: 80px;
+        padding-right: 80px;
     }
 
     .skills-info {
@@ -46,5 +43,22 @@
 
     .skills-info__divider {
         display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .skills {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    .skills {
+        padding: 80px 30px;
+    }
+
+    .skills h2 {
+        text-align: center;
     }
 }
