@@ -71,21 +71,3 @@
         margin: 0px;
     }
 }
-
-@media (max-width: 500px) {
-    /* Set the top and bottom margins of the project item */
-    .project-item {
-        margin: 16px;
-    }
-
-    /* 
-    *   Remove the top and bottom margins from the first 
-    *   and last project items respectively to maintain space consistency 
-    */
-    .project-item:first-child {
-        margin-top: 0px;
-    }
-    .project-item:last-child {
-        margin-bottom: 0px;
-    }
-}

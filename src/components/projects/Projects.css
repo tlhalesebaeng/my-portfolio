@@ -50,6 +50,11 @@
 }
 
 @media (max-width: 530px) {
+    .projects {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
     .projects-list {
         padding-left: 0px;
         padding-right: 0px;
