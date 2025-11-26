@@ -1,10 +1,17 @@
 const nodemailer = require('nodemailer');
 
 exports.handler = async (request) => {
+    const headers = {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers': 'application/json',
+        'Access-Control-Allow-Methods': 'POST, OPTIONS',
+    };
+
     // Allow only POST requests
     if (request.httpMethod != 'POST') {
         return {
             statusCode: 405, // Method not supported
+            headers,
             body: JSON.stringify({
                 error: `HTTP method ${request.httpMethod} not allowed!`,
             }),
@@ -16,6 +23,7 @@ exports.handler = async (request) => {
     if (!name || !email || !message) {
         return {
             statusCode: 400, // Bad request
+            headers,
             body: JSON.stringify({
                 error: 'All fields are required! Please provide all fields and try again',
             }),
@@ -45,6 +53,7 @@ exports.handler = async (request) => {
 
         return {
             statusCode: 200, // OK
+            headers,
             body: JSON.stringify({
                 message: 'Email sent successfully',
             }),
@@ -56,6 +65,7 @@ exports.handler = async (request) => {
         // Send a descriptive  message back to the user
         return {
             statusCode: 500, // Internal server error
+            headers,
             body: JSON.stringify({
                 error: 'Something went wrong! Please try again later',
             }),
