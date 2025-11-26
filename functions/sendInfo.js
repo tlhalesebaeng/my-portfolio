@@ -12,8 +12,8 @@ exports.handler = async (request) => {
     }
 
     // Extract provided details from the request body
-    const { name, email, subject, message } = JSON.parse(request.body);
-    if (!name || !email || !subject || !message) {
+    const { name, email, message } = JSON.parse(request.body);
+    if (!name || !email || !message) {
         return {
             statusCode: 400, // Bad request
             body: JSON.stringify({
@@ -28,7 +28,7 @@ exports.handler = async (request) => {
             from: process.env.SENDER_EMAIL_ADDRESS,
             to: process.env.RECEIVER_EMAIL_ADDRESS,
             subject: process.env.EMAIL_SUBJECT,
-            text: `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\n\nMessage:\n${message}`,
+            text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
         };
 
         // Create a nodemailer transporter which is used to send the email
