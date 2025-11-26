@@ -43,12 +43,35 @@
     transition: background-color 0.15s ease;
 }
 
+.contact-fields button:disabled {
+    background-color: rgba(35, 58, 140, 0.6);
+}
+
 .contact-fields button:hover {
     background-color: rgba(35, 58, 140, 0.9);
 }
 
+.contact-fields button[disabled]:hover {
+    cursor: default;
+    background-color: rgba(35, 58, 140, 0.6);
+}
+
 .contact-fields button:active {
     background-color: rgba(35, 58, 140, 0.6);
+}
+
+.form-message {
+    margin: 0px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.error {
+    color: rgb(255, 82, 76);
+}
+
+.success {
+    color: rgb(20, 222, 23);
 }
 
 /* Responsiveness */
