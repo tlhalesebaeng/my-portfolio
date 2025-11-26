@@ -2,7 +2,8 @@ import Input from '../../utils/Input.jsx';
 import './ContactForm.css';
 
 const ContactForm = (props) => {
-    const { fields, error, onSubmit, onChange, success, loading } = props;
+    const { fields, error, onSubmit, onChange, success, loading, disableBtn } =
+        props;
 
     return (
         <form className="contact-fields">
@@ -31,7 +32,7 @@ const ContactForm = (props) => {
             {success && (
                 <p className={'form-message ' + 'success'}>{success}</p>
             )}
-            <button disabled={loading} onClick={onSubmit}>
+            <button disabled={loading || disableBtn} onClick={onSubmit}>
                 {loading ? 'Loading...' : 'Submit'}
             </button>
         </form>
