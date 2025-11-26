@@ -90,6 +90,13 @@ const Contact = ({ ref }) => {
         },
     ];
 
+    // Validate data fields
+    let disableBtn = false;
+    const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$/;
+    if (!data.email || !data.message || !data.name || !regex.test(data.email)) {
+        disableBtn = true;
+    }
+
     return (
         <section className="contact" ref={ref}>
             <h2>Contact Me</h2>
@@ -97,6 +104,7 @@ const Contact = ({ ref }) => {
             <div className="details-container">
                 <ContactDetails details={personalDetails} />
                 <ContactForm
+                    disableBtn={disableBtn}
                     success={success}
                     loading={loading}
                     error={error}
