@@ -1,7 +1,9 @@
 import Input from '../../utils/Input.jsx';
 import './ContactForm.css';
 
-const ContactForm = ({ fields, onSubmit }) => {
+const ContactForm = (props) => {
+    const { fields, error, onSubmit, onChange, success, loading } = props;
+
     return (
         <form className="contact-fields">
             <ul>
@@ -18,13 +20,20 @@ const ContactForm = ({ fields, onSubmit }) => {
                                         ? 'text-area'
                                         : fieldValue.toLowerCase()
                                 }
+                                onChange={onChange}
                                 label={fieldValue}
                             />
                         </li>
                     );
                 })}
             </ul>
-            <button onClick={onSubmit}>Submit</button>
+            {error && <p className={'form-message ' + 'error'}>{error}</p>}
+            {success && (
+                <p className={'form-message ' + 'success'}>{success}</p>
+            )}
+            <button disabled={loading} onClick={onSubmit}>
+                {loading ? 'Loading...' : 'Submit'}
+            </button>
         </form>
     );
 };
