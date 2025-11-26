@@ -49,7 +49,6 @@ const Contact = ({ ref }) => {
             }
 
             setSuccess(result.message);
-            setError('buff');
         } catch (error) {
             setLoading(false);
             console.error(error);
