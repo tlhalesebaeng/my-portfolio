@@ -44,10 +44,7 @@ const Header = ({ refs }) => {
             </section>
             <section className="header-details">
                 <h2>Tlhalefo Sebaeng</h2>
-                <h3>
-                    Software Developer | Computer Science Student At Wits
-                    University
-                </h3>
+                <h3>BSc Computer Science student and tutor at Wits University</h3>
                 <p className="header-description">{description}</p>
                 <ul>
                     {skills.map((skill) => (
@@ -55,16 +52,10 @@ const Header = ({ refs }) => {
                     ))}
                 </ul>
                 <section className="header-buttons">
-                    <Button
-                        onClick={() => handleScroll(refs.projectsRef)}
-                        className="header-btn__projects"
-                    >
+                    <Button onClick={() => handleScroll(refs.projectsRef)} className="header-btn__projects">
                         View My Projects
                     </Button>
-                    <Button
-                        onClick={() => handleScroll(refs.contactRef)}
-                        className="header-btn__contact"
-                    >
+                    <Button onClick={() => handleScroll(refs.contactRef)} className="header-btn__contact">
                         Contact Me
                     </Button>
                 </section>

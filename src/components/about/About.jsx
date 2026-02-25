@@ -86,18 +86,15 @@ const About = ({ ref }) => {
                 </section>
 
                 <section className="about-details__info">
-                    <h3>Hi, I'm Tlhalefo Sebaeng</h3>
+                    <h3>Hi, I am Tlhalefo Sebaeng</h3>
                     <p>
-                        I am a Computer Science student at the University of the
-                        Witwatersrand and I am passionate about software
-                        engineering. I enjoy solving technical problems and I am
-                        more than happy to tackle any real-world problem in the
-                        field of technology.
+                        I am a Computer Science student and tutor at the University of the Witwatersrand and I am
+                        passionate about software engineering. I enjoy solving technical problems and I am more than
+                        happy to tackle any real-world problem in the field of technology.
                     </p>
                     <p>
-                        I spend most of my time enhancing my problems solving
-                        skills through building projects and solving DSA (Data
-                        Structures and Algorithms) problems.
+                        I spend most of my time enhancing my problems solving skills through building projects and
+                        solving DSA (Data Structures and Algorithms) problems.
                     </p>
                     <div className="about-details__info-skills">
                         <h3>Technical Skills</h3>
