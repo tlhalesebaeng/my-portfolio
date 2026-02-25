@@ -1,8 +1,8 @@
 import Marker from '../../utils/Marker.jsx';
-import './Skills.css';
-import SkillsList from './SkillsList.jsx';
+import EducationList from './EducationList.jsx';
+import './Education.css';
 
-const Skills = ({ ref }) => {
+const Education = ({ ref }) => {
     const skills = [
         {
             id: 'skill-1',
@@ -17,8 +17,7 @@ const Skills = ({ ref }) => {
             year: '2021',
             title: 'Matric',
             place: 'Mandisa Shiceka',
-            description:
-                'Matriculated with a distinction average. The stream was Mathematics and Science',
+            description: 'Matriculated with a distinction average. The stream was Mathematics and Science',
         },
     ];
 
@@ -28,10 +27,10 @@ const Skills = ({ ref }) => {
             <Marker />
             <section className="skills-info">
                 <div className="skills-info__divider"></div>
-                <SkillsList skills={skills} />
+                <EducationList skills={skills} />
             </section>
         </section>
     );
 };
 
-export default Skills;
+export default Education;

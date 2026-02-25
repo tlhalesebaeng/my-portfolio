@@ -1,6 +1,6 @@
-import './SkillsList.css';
+import './EducationList.css';
 
-const SkillsList = ({ skills }) => {
+const EducationList = ({ skills }) => {
     return (
         <ul className="skills-list">
             {skills.map((skill) => (
@@ -12,9 +12,7 @@ const SkillsList = ({ skills }) => {
                         <p className="skills-list__skill-year">{skill.year}</p>
                         <h3>{skill.title}</h3>
                         <p>{skill.place}</p>
-                        <p className="skills-list__skill-description">
-                            {skill.description}
-                        </p>
+                        <p className="skills-list__skill-description">{skill.description}</p>
                     </section>
                 </li>
             ))}
@@ -22,4 +20,4 @@ const SkillsList = ({ skills }) => {
     );
 };
 
-export default SkillsList;
+export default EducationList;
