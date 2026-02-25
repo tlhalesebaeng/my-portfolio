@@ -1,11 +1,10 @@
-import Marker from '../../utils/Marker.jsx';
-import EducationList from './EducationList.jsx';
+import SeparatedList from '../separated-list/SeparatedList.jsx';
 import './Education.css';
 
 const Education = ({ ref }) => {
-    const skills = [
+    const educationList = [
         {
-            id: 'skill-1',
+            id: 'education-1',
             year: '2023 - Present',
             title: 'BSc Computer Science and Computational Applications',
             place: 'Wits University',
@@ -13,7 +12,7 @@ const Education = ({ ref }) => {
                 'I am currently doing second year and I am expecting to finish on november 2026. Relevant course work includes Mobile Computing, Database Fundamentals, Computer Networks and Analysis of Algorithms.',
         },
         {
-            id: 'skill-2',
+            id: 'education-2',
             year: '2021',
             title: 'Matric',
             place: 'Mandisa Shiceka',
@@ -21,16 +20,7 @@ const Education = ({ ref }) => {
         },
     ];
 
-    return (
-        <section className="skills" ref={ref}>
-            <h2>Education</h2>
-            <Marker />
-            <section className="skills-info">
-                <div className="skills-info__divider"></div>
-                <EducationList skills={skills} />
-            </section>
-        </section>
-    );
+    return <SeparatedList ref={ref} infoClass="eduction-info" title="Education" list={educationList} />;
 };
 
 export default Education;
