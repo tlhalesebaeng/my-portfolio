@@ -50,7 +50,7 @@ const Footer = ({ refs }) => {
         },
         {
             id: 'link-5',
-            value: 'Contact',
+            value: 'Experience',
         },
     ];
 

@@ -7,11 +7,13 @@ import Navigation from './components/navigation/Navigation.jsx';
 import PersonalInfo from './components/personal-info/PersonalInfo.jsx';
 import Projects from './components/projects/Projects.jsx';
 import Education from './components/education/Education.jsx';
+import Experience from './components/experience/Experience.jsx';
 
 const App = () => {
     const aboutRef = useRef();
     const projectsRef = useRef();
     const educationRef = useRef();
+    const experienceRef = useRef();
     const contactRef = useRef();
     const homeRef = useRef();
 
@@ -21,6 +23,7 @@ const App = () => {
         educationRef,
         contactRef,
         homeRef,
+        experienceRef,
     };
 
     return (
@@ -32,6 +35,7 @@ const App = () => {
             <Projects ref={projectsRef} />
             <Contact ref={contactRef} />
             <Education ref={educationRef} />
+            <Experience ref={experienceRef} />
             <Footer refs={refs} />
         </main>
     );
