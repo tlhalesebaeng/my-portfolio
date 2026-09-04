@@ -19,19 +19,6 @@ const Projects = ({ ref }) => {
     },
     {
       id: 'project-2',
-      name: 'Test Maker',
-      desc: 'A platform to create tests and invite others to take them in a fun and interactive way',
-      techStack: [
-        { id: 'project-1-stack-1', name: 'Spring Boot' },
-        { id: 'project-2-stack-2', name: 'React' },
-        { id: 'project-1-stack-3', name: 'Hibernate' },
-        { id: 'project-1-stack-4', name: 'PostgreSQL' },
-      ],
-      link: 'https://github.com/tlhalesebaeng/testmaker-frontend',
-    },
-
-    {
-      id: 'project-3',
       name: 'SA Learnerships and Skills Development Portal',
       desc: 'Built a platform that connects work-seekers with SETA-accredited learnerships',
       techStack: [
@@ -41,6 +28,18 @@ const Projects = ({ ref }) => {
         { id: 'project-2-stack-4', name: 'MongoDB' },
       ],
       link: 'https://github.com/The-Geeks-Wits/sa-learnerships',
+    },
+    {
+      id: 'project-3',
+      name: 'League Oracle',
+      desc: 'Developed a full-stack web application that enables users manage their soccer leagues',
+      techStack: [
+        { id: 'project-2-stack-1', name: 'Spring Boot' },
+        { id: 'project-2-stack-2', name: 'React' },
+        { id: 'project-2-stack-3', name: 'Hibernate' },
+        { id: 'project-2-stack-4', name: 'PostgreSQL' },
+      ],
+      link: 'https://github.com/tlhalesebaeng/league-oracle-frontend',
     },
   ];
 
